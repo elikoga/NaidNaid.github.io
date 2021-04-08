@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,34 @@
     <title>Document</title>
 
     <style>
-        #bgbox{
+        #bgbox {
             width: 1000px;
             height: 400px;
             border-radius: 15px;
-            background-color:#e6ebf0;
+            background-color: #e6ebf0;
             position: relative;
             margin: auto;
         }
+
+        .outer {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
     </style>
 </head>
-<body margin=0>
-    <div id="bgbox"></div>
+
+<body>
+    <div class="outer">
+        <div id="bgbox"></div>
+    </div>
 </body>
+
 </html>
